@@ -1,16 +1,22 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Hmmm</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script type="text/javascript">
+    window.onload = function() {
+      var app = document.getElementById('app');
+      var text = document.getElementsByClassName('url')[0];
+      text.innerHTML = window.location.href;
+    }
+  </script>
 </head>
-<script type="text/javascript">
-const url = window.location.href;
-const app = document.getElementById('app');
-app.innerHTML = url;
-</script>
 <body>
-<h1>Testing...</h1>
-<div id="app">
-Test
-</div>
+  <div id="app">
+    <h1>Testing</h1>
+    <p>Going to <span class="url">loading</span></p>
+  </div>
 </body>
 </html>
